@@ -1,0 +1,61 @@
+#include "Zen_FrameworkFunctions\Zen_DialogSystem\Zen_Dialog.hpp"
+class CfgNotifications {
+    #include "Zen_FrameworkFunctions\Zen_TaskSystem\Zen_TaskNotifications.hpp"
+};
+
+#include "NOS.hpp"
+
+// HEADER
+class Header
+{
+	gameType =  COOP;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 32;	// maximum number of players the mission supports
+};
+
+
+// MISSION INFO
+author			= "4th Battalion - S-2";
+OnLoadName		= "DEVOPS - TEMPLATE MISSION";
+OnLoadMission	= "PLEASE EXCUSE OUR DUST.";
+// loadScreen		= "images\loadScreen.paa";
+
+
+// REVIVE
+respawn = 3;		// Default: 0 for SP, 1 for MP
+respawnButton = 0; // 0: disabled - 1: enabled. Default: 1
+respawnDelay = 10; // Default: ?
+respawnVehicleDelay = 12; // Default: ?
+respawnDialog = 0; // 0: disabled - 1: enabled. Default: 1
+respawnOnStart = -1; // Default: 0
+
+// TODO-- Need to figure out best templates...
+//respawnTemplates[] = { "Counter", "Wave" };
+
+reviveMode = 0; // Default: 0
+
+// CLEANUP
+corpseManagerMode = 2; // Default: 0 for SP, 2 for MP
+corpseLimit = 2; // Default: 15
+corpseRemovalMinTime = 60; // seconds. Default: 10
+corpseRemovalMaxTime = 1200; // seconds. Default: 3600
+
+wreckManagerMode = 1; // Default: 0 for SP, 2 for MP
+wreckLimit = 10; // seconds. Default: 15
+wreckRemovalMinTime = 120; // seconds. Default: 10
+wreckRemovalMaxTime = 1800; // seconds. Default: 36000 (10 hours)
+
+minPlayerDistance = 250; // meters. Default: 0
+
+// MISSION SETTINGS
+aiKills = 1; // 0: disabled - 1: enabled. Default: 0
+briefing = 0; // 0: disabled - 1: enabled. Default: 1
+debriefing = 0; // 0: disabled - 1: enabled. Default: 1
+disableChannels[] = { 1, 2, 3, 5}; // simple channel ID list
+disabledAI = 1; // 0: disabled - 1: enabled. Default: 0
+joinUnassigned = 1; // 0: disabled - 1: enabled. Default: 1
+saving = 0; // 0: disabled - 1: enabled. Default: 1
+
+// enableDebugConsole[] = { "76561198XXXXXXXXX", "76561198YYYYYYYYY", }; // admins and players with their UID in this list have access
+
+
